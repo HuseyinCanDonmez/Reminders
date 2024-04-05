@@ -1,0 +1,264 @@
+body {
+    display: flex;
+    font-family: Helvetica;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+body,
+form,
+.gitHub,
+header {
+    display: flex;
+}
+
+body,
+.gitHub,
+header,
+.wrapper {
+    align-items: center;
+}
+
+.buttonPrimary {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.buttonPrimary,
+.buttonSecondary,
+#dropdownButton,
+hr,
+input {
+    border: none;
+}
+
+.buttonPrimary,
+.buttonSecondary,
+#dropdownButton,
+ul {
+    cursor: pointer;
+}
+
+.buttonPrimary,
+.buttonSecondary,
+#remindersTitle,
+ul {
+    font-size: 20px;
+}
+
+.buttonPrimary,
+.buttonSecondary::before,
+#dropdownButton::after,
+::placeholder {
+    transition: .25s;
+}
+
+.buttonPrimary,
+.buttonSecondary:hover::before,
+hr {
+    background-color: rgb(0, 0, 0);
+}
+
+.buttonPrimary,
+.dropdownContent,
+.wrapper {
+    border-radius: 10px;
+}
+
+.buttonPrimary:hover {
+    transform: translateY(-2.5px);
+}
+
+.buttonSecondary {
+    background-color: transparent;
+}
+
+.buttonSecondary,
+#dropdownButton {
+    position: relative;
+}
+
+.buttonSecondary,
+#dropdownButton,
+.dropdownContent p,
+input,
+#remindersTitle {
+    margin: 0;
+}
+
+.buttonSecondary,
+input,
+input:focus::placeholder,
+input:hover::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.buttonSecondary,
+#dropdownButton
+input,
+ul {
+    padding: 0;
+}
+
+.buttonSecondary::before,
+#dropdownButton::after {
+    bottom: 0;
+    content: '';
+    height: 2px;
+}
+
+.buttonSecondary::before,
+#dropdownButton::after,
+.dropdownContent {
+    position: absolute;
+}
+
+.buttonSecondary::before,
+header,
+input {
+    width: 100%;
+}
+
+.buttonSecondary:not(:last-child),
+.gitHub a:not(:last-child) {
+    margin-right: 10px;
+}
+
+#clear-word {
+    color: rgb(225, 55, 55);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.dropdown {
+    margin-right: auto;
+}
+
+#dropdownButton {
+    background: none;
+}
+
+#dropdownButton::after {
+    border: 5px solid transparent;
+    border-top-color: rgb(0, 0, 0);
+    margin-left: 5px;
+    top: 15px;
+    transform: translateY(-50%);
+}
+
+#dropdownButton:not(:last-child) {
+    margin-left: 10px;
+}
+
+.dropdownContent {
+    margin-top: 1px;
+}
+
+.dropdownContent,
+header,
+.wrapper {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+.dropdownContent,
+.hidden {
+    display: none;
+}
+
+.dropdownContent,
+input {
+    background-color: rgb(255, 255, 255)
+}
+
+.dropdownContent p {
+    padding: 15px 15px;
+}
+
+.dropdown:hover #dropdownButton::after {
+    transform: rotate(-180deg) translateY(100%);
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.gitHub {
+    margin-right: 20px;
+}
+
+#gitHubProfileButton {
+    background-color: rgb(100, 125, 255);
+}
+
+header {
+    display: flex;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+}
+
+hr {
+    height: 1.5px;
+}
+
+input {
+    font-size: 40px;
+    margin-top: 20px;
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(155, 155, 155);
+}
+
+#remindersTitle {
+    margin-left: 20px;
+    user-select: none;
+}
+
+#show-word {
+    color: rgb(55, 200, 55);
+}
+
+ul {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0;
+}
+
+.wrapper {
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+@media screen and (max-height: 100px),
+       screen and (max-width: 400px) {
+    body {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 200px),
+       screen and (max-width: 700px) {
+    button {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px),
+       screen and (max-width: 1000px) {
+    header {
+        display: none;
+    }
+}

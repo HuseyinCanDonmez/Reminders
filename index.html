@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <link rel='stylesheet' href='index.css'>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Reminders</title>
+</head>
+
+<body>
+    <header>
+        <h1 id='remindersTitle'>Reminders</h1>
+
+        <div class='dropdown'>
+            <button class='buttonSecondary' id='dropdownButton'>Built using</button>
+            <div class='dropdownContent'>
+                <p>CSS</p>
+                <p>HTML</p>
+                <p>TypeScript</p>
+            </div>
+        </div>
+
+        <div class='gitHub'>
+            <a href='https://github.com/huseyincandonmez/reminders'>
+                <button class='buttonSecondary'>GitHub Repository</button>
+            </a>
+            <a href='https://github.com/huseyincandonmez'>
+                <button class='buttonPrimary' id='gitHubProfileButton'>GitHub Profile</button>
+            </a>
+        </div>
+    </header>
+
+    <div class='wrapper'>
+        <form id='remindersForm'>
+            <input id='remindersInput' maxLength='50' placeholder='Add reminder' required>
+        </form>
+
+        <button class='buttonSecondary' id='showCompletedButton'><span id='show-word'>Show</span> Completed Reminders</button>
+        <button class='buttonSecondary' id='clearCompletedButton'><span id='clear-word'>Clear</span> Completed Reminders</button>
+
+        <ul id='remindersList'></ul>
+        <hr class='hidden' id='hrElement'>
+        <ul class='hidden' id='completedList'></ul>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+
+</html>
